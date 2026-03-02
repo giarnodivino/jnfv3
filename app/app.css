@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+.card1 {
+  background-color: rgb(230, 230, 230);
+  width: 200px;
+  height: 300px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(227, 227, 227, 0.979);
+  margin-top: 150px;
+}
+
+.background-image1 {
+  position: absolute;
+  inset: 0;
+  background-image: url("./assets/images/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(6px);
+  transform: scale(1.1); /* prevents edge blur cutoff */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .background-image1 {
+    background-image: url("./assets/images/bg1v2.png");
+    background-position: top;
+  }
+}
+
+.desc1 {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.button1 {
+  background-color: #f6f1e8;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
