@@ -1,0 +1,1 @@
+import{w as e,p as s}from"./chunk-EPOLDU6W-CBEC0vNl.js";const n=e(function(){return s.jsx("div",{className:"min-h-screen flex items-center justify-center",children:s.jsx("h1",{className:"text-4xl font-bold",children:"Blogs Coming Soon!"})})});export{n as default};
