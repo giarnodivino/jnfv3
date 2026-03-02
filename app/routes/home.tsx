@@ -15,7 +15,7 @@ import {
   Street,
 } from "../assets/images/allImages";
 import Contact from "../components/contact";
-import MapCard from "../components/cards";
+import {MapCard, ACcard} from "../components/cards";
 import ClientsSection from "../components/tenants";
 import BlogCard from "../components/BlogCard";
 import {Link} from "react-router";
@@ -173,23 +173,7 @@ function App() {
         <p className="text-lg text-gray-600 text-center">We provide spaces for you to grow your business</p>
 
         <div className="mx-auto mt-10 grid max-w-4xl gap-8 md:grid-cols-2">
-          {/* Address Card */}
-          <div className="mx-auto h-full w-full max-w-md rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center">Address</h3>
-            <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed text-center">
-              J&F Divino Arcade, 961 Aurora Boulevard, Cubao, Quezon City
-            </p>
-          </div>
-
-          {/* Contact Card */}
-          <div className="mx-auto h-full w-full max-w-md rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center">Contact Information</h3>
-            <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed text-center">
-              <strong>Phone:</strong> +63 917 530 7337
-              <br />
-              <strong>Email:</strong> info@jnfdivino.com
-            </p>
-          </div>
+          <ACcard title="Address" subtitle="J&F Divino Arcade, 961 Aurora Boulevard, Cubao, Quezon City" />
         </div>
 
         <div className="">

@@ -11,15 +11,7 @@ import Mercury from "../assets/images/mercury.png";
 import Goldilocks from "../assets/images/goldilocks.jpg";
 import Consulting from "../assets/images/consulting.jpg";
 
-// Option A (recommended): put your logos in /src/assets/clients/
-// then import them like below.
-// import redPlanet from "../assets/clients/red-planet.png";
-// import marriott from "../assets/clients/marriott.png";
-
 const clients = [
-  // { name: "Red Planet", src: redPlanet },
-  // { name: "Marriott", src: marriott },
-  // For now, placeholders (replace with your real images):
   {name: "Jollibee", src: Jollibee},
   {name: "Shakeys", src: Shakeys},
   {name: "Mercury Drug", src: Mercury},
