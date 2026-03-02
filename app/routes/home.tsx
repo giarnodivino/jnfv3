@@ -158,7 +158,7 @@ function App() {
         <h2 className="text-4xl font-semibold text-gray-900 sm:text-5xl text-center p-5 mt-10">LATEST BLOGS</h2>
         <div className="grid grid-cols-1 gap-6 mt-4 md:grid-cols-2 lg:grid-cols-3 p-10">
           {latestBlogs.map((blog) => (
-            <Link key={blog.id} to={`/blog/${blog.id}`} className="block h-full">
+            <Link key={blog.id} to={`/blog/${blog.id}`} viewTransition className="block h-full">
               <BlogCard image={blog.image} title={blog.title} />
             </Link>
           ))}
