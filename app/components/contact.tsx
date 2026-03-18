@@ -15,7 +15,7 @@ export default function Contact() {
       </div>
 
       <form
-        action="https://formsubmit.co/c67ce7757c03cf0bd42019a8cdd86e5a"
+        action="https://formsubmit.co/bbcf60780c2182364ea355de8402e2fb"
         method="POST"
         className="mx-auto mt-6 max-w-xl sm:mt-8"
       >
