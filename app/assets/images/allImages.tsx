@@ -8,10 +8,10 @@ import Partner from "./partners.png";
 import Trust from "./trusted.png";
 import Jollibee from "./jollibee.png";
 import Shakeys from "./shakeys.png";
-import LRT from "./lrt.jpg";
+import LRT from "./LRT.jpg";
 import comeback from "./comeback.png";
 import Trains from "./trains.jpg";
-import Jeep from "./Jeep.jpg";
+import Jeep from "./jeep.jpg";
 import Street from "./Street.jpg";
 
 export {

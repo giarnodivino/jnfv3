@@ -1,3 +1,5 @@
+import { ACcard } from "./cards";
+
 export default function Contact() {
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-8 sm:py-12 lg:px-8">
@@ -12,6 +14,16 @@ export default function Contact() {
           }}
           className="relative left-1/2 -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-linear-to-tr from-indigo-500 to-teal-200 opacity-30 sm:left-[calc(50%-40rem)] sm:w-288.75"
         />
+      </div>
+
+      <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl text-center p-5 mt-10">
+        INQUIRE NOW
+      </h2>
+
+      <p className="text-lg text-gray-600 text-center">We provide spaces for you to grow your business</p>
+
+      <div className="mx-auto mt-10 grid max-w-4xl gap-8 md:grid-cols-2">
+        <ACcard title="Address" subtitle="J&F Divino Arcade, 961 Aurora Boulevard, Cubao, Quezon City" />
       </div>
 
       <form

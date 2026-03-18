@@ -1,5 +1,5 @@
-import {useState} from "react";
-import "../App.css";
+import { useState } from "react";
+import "../app.css";
 import Navbar from "../components/Navbar";
 import {
   Drone,
@@ -15,23 +15,23 @@ import {
   Street,
 } from "../assets/images/allImages";
 import Contact from "../components/contact";
-import {MapCard, ACcard, ChooseUsCards} from "../components/cards";
+import { MapCard, ACcard, ChooseUsCards } from "../components/cards";
 import ClientsSection from "../components/tenants";
 import BlogCard from "../components/BlogCard";
-import {Link} from "react-router";
+import { Link } from "react-router";
 
 function App() {
   const latestBlogs = [
-    {id: "cubao-comeback", image: comeback, title: "Cubao: The Comeback Kid of Quezon City"},
-    {id: "future-cubao-modernization", image: LRT, title: "The Future of Cubao: Modernization and Revival"},
-    {id: "affordability-opportunity", image: Street, title: "Affordability and Opportunity"},
-    {id: "future-of-cubao", image: Trains, title: "The Future of Cubao"},
+    { id: "cubao-comeback", image: comeback, title: "Cubao: The Comeback Kid of Quezon City" },
+    { id: "future-cubao-modernization", image: LRT, title: "The Future of Cubao: Modernization and Revival" },
+    { id: "affordability-opportunity", image: Street, title: "Affordability and Opportunity" },
+    { id: "future-of-cubao", image: Trains, title: "The Future of Cubao" },
     {
       id: "new-face-cubao",
       image: Jeep,
       title: "The New Face of Cubao: Modernization and Revival",
     },
-    {id: "sustainability-infrastructure", image: Drone, title: "Sustainability and Infrastructure Outlook"},
+    { id: "sustainability-infrastructure", image: Drone, title: "Sustainability and Infrastructure Outlook" },
   ];
 
   return (
@@ -131,17 +131,7 @@ function App() {
         </div>
       </section>
       {/* CONTACT US SECTION */}
-      <section className="relative mx-auto p-4 mt-15 " id="contactus">
-        <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl text-center p-5 mt-10">
-          INQUIRE NOW
-        </h2>
-
-        <p className="text-lg text-gray-600 text-center">We provide spaces for you to grow your business</p>
-
-        <div className="mx-auto mt-10 grid max-w-4xl gap-8 md:grid-cols-2">
-          <ACcard title="Address" subtitle="J&F Divino Arcade, 961 Aurora Boulevard, Cubao, Quezon City" />
-        </div>
-
+      <section className="relative mt-15" id="contactus">
         <div className="">
           <Contact />
         </div>
