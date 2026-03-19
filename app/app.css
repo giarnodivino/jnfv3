@@ -9,25 +9,6 @@
   margin-top: 150px;
 }
 
-.background-image1 {
-  position: absolute;
-  inset: 0;
-  background-image: url("./assets/images/bg1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: blur(6px);
-  transform: scale(1.1); /* prevents edge blur cutoff */
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
-@media (min-width: 768px) {
-  .background-image1 {
-    background-image: url("./assets/images/bg1v2.png");
-    background-position: top;
-  }
-}
-
 .desc1 {
   padding-top: 50px;
   padding-left: 50px;

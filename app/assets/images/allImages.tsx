@@ -13,6 +13,7 @@ import comeback from "./comeback.png";
 import Trains from "./trains.jpg";
 import Jeep from "./jeep.jpg";
 import Street from "./Street.jpg";
+import homePic from "./bg1v2.png";
 
 export {
   Drone,
@@ -29,4 +30,5 @@ export {
   Trains,
   Jeep,
   Street,
+  homePic,
 };

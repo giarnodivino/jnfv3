@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import JNFLogo from "../assets/icons/logo.svg"; // adjust path
 
 export default function Navbar() {
@@ -9,7 +9,7 @@ export default function Navbar() {
       {/* Top bar */}
       <div className="mx-auto flex h-16 lg:h-25 max-w-7xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3">
           <img src={JNFLogo} alt="J&F Divino" className="h-16 lg:h-25 w-auto" />
         </a>
 
