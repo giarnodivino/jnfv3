@@ -14,6 +14,8 @@ import Trains from "./trains.jpg";
 import Jeep from "./jeep.jpg";
 import Street from "./Street.jpg";
 import homePic from "./bg1v2.png";
+import Salon from "./salon.jpeg";
+import insideShakeys from "./insideShakeys.jpeg";
 
 export {
   Drone,
@@ -31,4 +33,6 @@ export {
   Jeep,
   Street,
   homePic,
+  Salon,
+  insideShakeys,
 };

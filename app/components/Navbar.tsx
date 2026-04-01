@@ -1,11 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import JNFLogo from "../assets/icons/logo.svg"; // adjust path
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Hide navbar when scrolling down, show when scrolling up
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false); // Scrolling down
+      } else {
+        setIsVisible(true); // Scrolling up
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-[#F6F1E8]">
+    <nav
+      className={`fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-[#F6F1E8] transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       {/* Top bar */}
       <div className="mx-auto flex h-16 lg:h-25 max-w-7xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}

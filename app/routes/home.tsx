@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../app.css";
 import Navbar from "../components/Navbar";
+import Carousel from "../components/Carousel";
 import {
   Drone,
   Roof,
@@ -14,6 +15,10 @@ import {
   Jeep,
   Street,
   homePic,
+  Shakeys,
+  Jollibee,
+  Salon,
+  insideShakeys,
 } from "../assets/images/allImages";
 import Contact from "../components/contact";
 import { MapCard, ACcard, ChooseUsCards } from "../components/cards";
@@ -43,7 +48,7 @@ function App() {
 
       {/* WELCOME SECTION */}
       <section
-        className="relative w-full overflow-hidden bg-[#A36C2E] px-4 pt-20 pb-12 min-h-svh md:min-h-screen"
+        className="relative w-full overflow-hidden bg-[#A36C2E] px-4 pt-10 md:pt-3 xl:pt-20 pb-12 min-h-svh md:min-h-screen"
         id="home"
       >
         <div
@@ -88,6 +93,21 @@ function App() {
         </div>
       </section>
       <br />
+
+      {/* WHAT WE DO SECTION */}
+      <section id="whatWeDo" className="">
+        <div className="grid grid-cols-1 place-items-center mx-auto justify-center">
+          <div className="col-span-1">
+            <h1 className="text-4xl pt-5 px-8 font-extrabold text-center md:text-5xl lg:text-6xl">WHAT WE DO</h1>
+            <p className="text-[#939AA2] text-center p-4 md:text-xl">
+              We develop, manage, and lease commercial spaces designed to support the growth of businesses.
+            </p>
+          </div>
+          <div className="col-span-1 p-5 lg:max-w-3xl xl:max-w-4xl mx-auto">
+            <Carousel images={[Salon, insideShakeys]} title="Our Tenants" />
+          </div>
+        </div>
+      </section>
 
       {/* ABOUT US SECTION */}
       <section id="aboutUs" className="pb-10 bg-linear-to-b from-white to-gray-200">
