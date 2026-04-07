@@ -16,6 +16,10 @@ import Street from "./Street.jpg";
 import homePic from "./bg1v2.png";
 import Salon from "./salon.jpeg";
 import insideShakeys from "./insideShakeys.jpeg";
+import Dentist from "./Dentist.jpg";
+import insideJollibee from "./insideJollibee.jpg";
+import Ukay1 from "./Ukay1.jpg";
+import Ukay2 from "./Ukay2.jpg";
 
 export {
   Drone,
@@ -35,4 +39,8 @@ export {
   homePic,
   Salon,
   insideShakeys,
+  Dentist,
+  insideJollibee,
+  Ukay1,
+  Ukay2,
 };

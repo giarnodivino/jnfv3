@@ -36,7 +36,7 @@ export default function Carousel({ images, title, autoSlide = false, autoSlideIn
   return (
     <div className="relative w-full max-w-5xl mx-auto">
       {/* Image Container */}
-      <div className="relative overflow-hidden rounded-3xl h-[28rem] md:h-[30rem]">
+      <div className="relative overflow-hidden rounded-3xl h-112 md:h-120">
         <img src={images[currentIndex]} alt={`slide-${currentIndex}`} className="w-full h-full object-cover" />
 
         {/* Navigation Buttons */}

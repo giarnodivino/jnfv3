@@ -19,6 +19,10 @@ import {
   Jollibee,
   Salon,
   insideShakeys,
+  Dentist,
+  insideJollibee,
+  Ukay1,
+  Ukay2,
 } from "../assets/images/allImages";
 import Contact from "../components/contact";
 import { MapCard, ACcard, ChooseUsCards } from "../components/cards";
@@ -104,7 +108,7 @@ function App() {
             </p>
           </div>
           <div className="col-span-1 p-5 lg:max-w-3xl xl:max-w-4xl mx-auto">
-            <Carousel images={[Salon, insideShakeys]} title="Our Tenants" />
+            <Carousel images={[Salon, insideShakeys, Dentist, insideJollibee, Ukay1, Ukay2]} title="Our Tenants" />
           </div>
         </div>
       </section>
