@@ -23,6 +23,7 @@ import {
   insideJollibee,
   Ukay1,
   Ukay2,
+  Ukay3,
 } from "../assets/images/allImages";
 import Contact from "../components/contact";
 import { MapCard, ACcard, ChooseUsCards } from "../components/cards";
@@ -143,7 +144,7 @@ function App() {
 
           {/* COLLAGE */}
           <div className="relative mx-auto w-full max-w-lg md:col-span-5 md:col-start-6 md:max-w-none md:h-180 h-180 overflow-hidden ">
-            <img src={Drone} className="absolute top-0 left-4 w-4/5 md:w-3/5 rounded-xl shadow-xl z-20" />
+            <img src={Ukay3} className="absolute top-0 left-4 w-4/5 md:w-3/5 rounded-xl shadow-xl z-20" />
             <img
               src={Roof}
               className="absolute top-50 left-16 md:left-24 lg:left-36 w-4/5 md:w-3/5 rounded-xl shadow-lg z-30"

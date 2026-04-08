@@ -20,6 +20,7 @@ import Dentist from "./Dentist.jpg";
 import insideJollibee from "./insideJollibee.jpg";
 import Ukay1 from "./Ukay1.jpg";
 import Ukay2 from "./Ukay2.jpg";
+import Ukay3 from "./Ukay3.jpg";
 
 export {
   Drone,
@@ -43,4 +44,5 @@ export {
   insideJollibee,
   Ukay1,
   Ukay2,
+  Ukay3,
 };
